@@ -1,1 +1,22 @@
-halo nama saya adrian
+const express = require('express');
+const app = express();
+
+// Pengaturan EJS sebagai view engine
+app.set('view engine', 'ejs');
+
+// Rute beranda
+app.get('/', (req, res) => {
+  res.render('index'); // Buat file EJS dengan nama index.ejs untuk tampilan beranda
+});
+
+// Rute portofolio
+app.get('/portofolio', (req, res) => {
+  res.render('portofolio'); // Buat file EJS dengan nama portofolio.ejs untuk tampilan portofolio
+});
+
+// Atur rute lain sesuai kebutuhan Anda
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Server berjalan di http://localhost:${port}`);
+});
