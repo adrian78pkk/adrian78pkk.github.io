@@ -1,22 +1,50 @@
-const express = require('express');
-const app = express();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Portofolio Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
-// Pengaturan EJS sebagai view engine
-app.set('view engine', 'ejs');
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Selamat datang di halaman portofolio saya. Saya adalah seorang desainer web dengan pengalaman dalam...</p>
+    </section>
 
-// Rute beranda
-app.get('/', (req, res) => {
-  res.render('index'); // Buat file EJS dengan nama index.ejs untuk tampilan beranda
-});
+    <section id="portfolio">
+        <h2>Portofolio</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Proyek 1">
+            <h3>Proyek 1</h3>
+            <p>Deskripsi singkat proyek 1.</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Proyek 2">
+            <h3>Proyek 2</h3>
+            <p>Deskripsi singkat proyek 2.</p>
+        </div>
+        <!-- Tambahkan lebih banyak proyek di sini -->
+    </section>
 
-// Rute portofolio
-app.get('/portofolio', (req, res) => {
-  res.render('portofolio'); // Buat file EJS dengan nama portofolio.ejs untuk tampilan portofolio
-});
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Silakan hubungi saya melalui email di <a href="mailto:email@example.com">email@example.com</a></p>
+    </section>
 
-// Atur rute lain sesuai kebutuhan Anda
-
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server berjalan di http://localhost:${port}`);
-});
+    <footer>
+        <p>&copy; 2023 Portofolio Saya</p>
+    </footer>
+</body>
+</html>
