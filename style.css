@@ -1,21 +1,21 @@
-/* Reset beberapa gaya bawaan browser */
+/* style.css */
+
+/* Resetting default margin and padding */
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
 
-/* Gaya umum */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-}
-
+/* Styling header */
 header {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
 }
 
 nav ul {
@@ -27,24 +27,34 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
     color: #fff;
+    font-weight: bold;
 }
 
+/* Styling sections */
 section {
-    padding: 40px;
+    padding: 20px;
 }
 
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Styling project boxes */
 .project {
-    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .project img {
     max-width: 100%;
-    height: auto;
 }
 
+/* Styling footer */
 footer {
     background-color: #333;
     color: #fff;
