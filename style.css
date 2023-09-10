@@ -1,6 +1,6 @@
 /* style.css */
 
-/* Resetting default margin and padding */
+/* Reset default margin and padding */
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
@@ -16,7 +16,8 @@ header {
 
 header h1 {
     font-size: 36px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -36,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff7f50; /* Warna saat hover */
+    color: #ff7f50;
 }
 
 /* Styling sections */
@@ -52,14 +53,14 @@ section h2 {
 
 /* Styling project boxes */
 .project {
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     padding: 20px;
     margin-bottom: 40px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .project:hover {
@@ -70,7 +71,7 @@ section h2 {
 .project img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .project h3 {
@@ -91,7 +92,7 @@ footer {
     padding: 20px 0;
 }
 
-/* Membuat situs responsif */
+/* Making the site responsive */
 @media (max-width: 768px) {
     header h1 {
         font-size: 28px;
